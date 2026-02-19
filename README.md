@@ -142,8 +142,19 @@ jawaban : 203.205.34.107
 Jawaban yang Benar
 
 Bisakah Anda mendapatkan Nama Workstation (hostname) sebenarnya dari pelaku ancaman?
+cara hampir sama - buka event viewer - di file rdp security - filter current - masukan code 4624 ini adalah ivent id login berhasil - lihat di bagian detail 
+<img width="1340" height="697" alt="image" src="https://github.com/user-attachments/assets/c45f8fa9-726f-4f5c-a5be-89097400e602" />
 
-DESKTOP-QNBC4UU
+
+ seperti contoh di bawah ini : 
+ LogonType 3 
+  LogonProcessName NtLmSsp  
+  AuthenticationPackageName NTLM 
+  WorkstationName DESKTOP-QNBC4UU 
+
+
+
+jawaban : DESKTOP-QNBC4UU
 
 Jawaban yang Benar
 
@@ -188,19 +199,30 @@ Jawablah pertanyaan-pertanyaan di bawah ini.
 Mari kita berperan sebagai pengguna awam dan tanpa berpikir panjang membuka file COM.
 Jalankan file www.skype.com dari folder Phishing Case 1 , flag apa yang Anda dapatkan?
 
-THM{misleading_extension}
+buka event viewer - cari file phising case 1 - kemudian akan muncul file yang di tuju - cuku klik saja dan lihat apa flag nya 
+
+<img width="1352" height="704" alt="image" src="https://github.com/user-attachments/assets/1f6feae0-9316-4396-881d-d79f695fbd79" />
+
+
+jawaban : THM{misleading_extension}
 
 Jawaban yang Benar
+
+
 Lanjutkan dengan lampiran kedua dari folder Kasus Phishing 2.
 Dari URL mana LNK berbahaya mengunduh malware tahap selanjutnya?
+cara nya Pertama, ekstrak folder tersebut. Periksa properti file HTML. Dan di bawah Target, Anda akan melihat tindakan yang dilakukan oleh file tersebut.
+lihat di bagian folder official web properties - shotcut - target
 
 http://wp16.hqywlqpa.thm:8000/cgi-bin/f
 
 Jawaban yang Benar
 Terakhir, buka  folder Phishing Case 3 dan periksa isinya.
 Apa nama file dengan ekstensi ganda yang Anda lihat di sana?
+<img width="756" height="250" alt="image" src="https://github.com/user-attachments/assets/5e167226-a000-4798-ac06-fd8d1de7da67" />
 
-best-cat.jpg.exe
+
+jawaban : best-cat.jpg.exe
 
 Jawaban yang Benar
 
