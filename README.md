@@ -104,14 +104,40 @@ C:\Users\Administrator\Desktop\Practice\ RDP Case\ RDP -Security. evtx
 
 Jawablah pertanyaan-pertanyaan di bawah ini.
 Pengguna mana yang tampaknya paling sering menjadi sasaran serangan brute-force oleh botnet?
+cara nya : buka eventviewer - di folder rdp security  - filter curent log -  masukan pencarian 4625 yang bagaimana menjelaskan upaya login gagal / attemp login failed - cari waktu pertama kali di akses/ awal akses- lihat detail - jawaban nya administrator 
+SubjectUserSid S-1-0-0 
+  SubjectUserName - 
+  SubjectDomainName - 
+  SubjectLogonId 0x0 
+  TargetUserSid S-1-0-0 
+  TargetUserName ADMINISTRATOR 
+<img width="1363" height="710" alt="detecting windows 1" src="https://github.com/user-attachments/assets/daafffd7-1ea4-46a3-a9de-f296577740ec" />
 
-Administrator
+
+
+jawaban : Administrator
 
 Jawaban yang Benar
 
 IP mana yang berhasil menembus host melalui RDP (Tipe Login 10)?
+caranya masuk di eventviewer - file rdp security - cari di filter curent log - masukan code 4624 ini adalah code login berhasil -tekan enter - ciri nya yaitu type login 10 - cari event id nya - dan lihat detail - maka akan muncul seperti contoh di bawah ini :  
+ LogonType 10 
+  LogonProcessName User32  
+  AuthenticationPackageName Negotiate 
+  WorkstationName WIN-F89VT9IER10 
+  LogonGuid {00000000-0000-0000-0000-000000000000} 
+  TransmittedServices - 
+  LmPackageName - 
+  KeyLength 0 
+  ProcessId 0x920 
+  ProcessName C:\Windows\System32\svchost.exe 
+  IpAddress 203.205.34.107 
 
-203.205.34.107
+
+
+<img width="1338" height="670" alt="image" src="https://github.com/user-attachments/assets/50c4d1e0-dcd0-4f49-9948-bf6078ffb92e" />
+
+jawaban : 203.205.34.107
 
 Jawaban yang Benar
 
