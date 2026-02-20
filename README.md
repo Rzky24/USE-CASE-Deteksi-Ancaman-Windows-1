@@ -1,4 +1,4 @@
-# USE-CASE-Deteksi-Ancaman-Windows-1
+<img width="864" height="252" alt="image" src="https://github.com/user-attachments/assets/dfc9ece1-f80d-43de-a9f7-f1c7d2111114" /># USE-CASE-Deteksi-Ancaman-Windows-1
 
 Perkenalan
 sekarang saatnya untuk menerapkan pengetahuan tersebut! Ruang ini memandu Anda melalui teknik Akses Awal dan Penemuan yang umum dan mengajarkan cara mendeteksi masing-masing teknik tersebut hanya menggunakan log peristiwa Windows, sumber log yang paling umum digunakan oleh tim SOC di dunia nyata .
@@ -342,7 +342,17 @@ C:\Users\Administrator\Desktop\Practice\USB Case\USB- Sysmon . evtx
 Jawablah pertanyaan-pertanyaan di bawah ini.
 File USB mana yang dijalankan oleh pengguna?
 
+FILE BERADA DI FILE CREATED / ( FILE RULE CREATE ) - LIHAT DETAIL 
 <img width="860" height="247" alt="image" src="https://github.com/user-attachments/assets/7586519f-0b55-444b-809c-6d588645c938" />
+
+EventData 
+
+  RuleName EXE 
+  UtcTime 2025-05-20 19:34:06.754 
+  ProcessGuid {c5d2b969-d92e-682c-9205-000000001801} 
+  ProcessId 1108 
+  Image E:\Open Sandisk 4GB USB.exe 
+  TargetFilename C:\Users\Public\Documents\winupdate.exe 
 
 
 JAWABAN : E:\Open Sandisk 4GB USB.exe
@@ -350,8 +360,17 @@ JAWABAN : E:\Open Sandisk 4GB USB.exe
 Jawaban yang Benar
 File mencurigakan mana yang dijatuhkan malware ke disk?
 (Format: jalur lengkap ke file, misalnya C:\file.txt)
+CARANYA BUKA EVENT VIEWER - CARI DI USB SYSMON - LIHAT DI EVENT DAN CARI -  Information	5/20/2025 7:34:06 PM	Sysmon	13	Registry value set (rule: RegistryEvent) 
 
 <img width="864" height="252" alt="image" src="https://github.com/user-attachments/assets/b543805a-e813-455d-8824-17841ef96138" />
+
+EventType SetValue 
+  UtcTime 2025-05-20 19:34:06.761 
+  ProcessGuid {c5d2b969-d92e-682c-9205-000000001801} 
+  ProcessId 1108 
+  Image E:\Open Sandisk 4GB USB.exe 
+  TargetObject HKU\S-1-5-21-1966530601-3185510712-10604624-500\Software\Microsoft\Windows\CurrentVersion\Run\WinUpdate 
+  Details C:\Users\Public\Documents\winupdate.exe 
 
 
 JAWABAN : C:\Users\Public\Documents\winupdate.exe
