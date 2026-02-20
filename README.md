@@ -261,20 +261,54 @@ C:\Users\Administrator\Desktop\Practice\ Phishing Case 3\ Phishing - Sysmon . ev
 Jawablah pertanyaan-pertanyaan di bawah ini.
 File apa yang diunduh pengguna melalui peramban web?
 
-C:\Users\Administrator\Downloads\top-cats.zip
+Agar file dapat diperiksa, kita perlu memastikan bahwa Image adalah explorer.exe dan targetnya adalah yang kita inginkan. Setelah memeriksa kategori kejadian terkait file, akhirnya saya menemukan jawabannya.
+
+LIHAT DETAIL : 
+File stream created:
+RuleName: -
+UtcTime: 2025-05-20 18:58:28.756
+ProcessGuid: {c5d2b969-d0d4-682c-2405-000000001801}
+ProcessId: 1316
+Image: C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe
+TargetFilename: C:\Users\Administrator\Downloads\top-cats.zip:Zone.Identifier
+
+ <img width="1365" height="471" alt="image" src="https://github.com/user-attachments/assets/e3acf09b-b37e-4e93-80ed-424ba9313f4d" />
+
+
+JAWABAN : C:\Users\Administrator\Downloads\top-cats.zip
 
 Jawaban yang Benar
 Di folder mana pengguna mengekstrak file yang mencurigakan tersebut?
 
-C:\Users\Administrator\Pictures
+Awalnya saya tidak dapat menemukan jawabannya, tetapi setelah menjawab 12 pertanyaan, saya berhasil mendapatkan jawaban untuk pertanyaan lainnya.
+
+LIHAT DI DETAIL 
+EventData 
+
+  RuleName - 
+  UtcTime 2025-05-20 18:58:44.100 
+  ProcessGuid {c5d2b969-2e42-682b-4a02-000000001801} 
+  ProcessId 2788 
+  Image C:\Windows\Explorer.EXE 
+  TargetFilename C:\Users\Administrator\Pictures 
+
+
+JAWABAN : C:\Users\Administrator\Pictures
 
 Jawaban yang Benar
 Berapakah ID proses dari malware phishing yang diluncurkan?
+
+
+<img width="1358" height="540" alt="image" src="https://github.com/user-attachments/assets/f6f2e1bb-47af-426b-8551-ff8a6bb584ff" />
+
 
 5484
 
 Jawaban yang Benar
 Terakhir, domain berbahaya mana yang coba dihubungkan oleh malware tersebut?
+
+<img width="638" height="403" alt="image" src="https://github.com/user-attachments/assets/7138f576-93bd-4964-bd3b-5a85d95b7d35" />
+
 
 rjj.store
 
@@ -308,13 +342,19 @@ C:\Users\Administrator\Desktop\Practice\USB Case\USB- Sysmon . evtx
 Jawablah pertanyaan-pertanyaan di bawah ini.
 File USB mana yang dijalankan oleh pengguna?
 
-E:\Open Sandisk 4GB USB.exe
+<img width="860" height="247" alt="image" src="https://github.com/user-attachments/assets/7586519f-0b55-444b-809c-6d588645c938" />
+
+
+JAWABAN : E:\Open Sandisk 4GB USB.exe
 
 Jawaban yang Benar
 File mencurigakan mana yang dijatuhkan malware ke disk?
 (Format: jalur lengkap ke file, misalnya C:\file.txt)
 
-C:\Users\Public\Documents\winupdate.exe
+<img width="864" height="252" alt="image" src="https://github.com/user-attachments/assets/b543805a-e813-455d-8824-17841ef96138" />
+
+
+JAWABAN : C:\Users\Public\Documents\winupdate.exe
 
 Jawaban yang Benar
 Ke USB lain mana malware tersebut menyebar?
