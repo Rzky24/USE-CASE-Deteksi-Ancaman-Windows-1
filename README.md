@@ -1,4 +1,6 @@
-<img width="864" height="252" alt="image" src="https://github.com/user-attachments/assets/dfc9ece1-f80d-43de-a9f7-f1c7d2111114" /># USE-CASE-Deteksi-Ancaman-Windows-1
+# USE-CASE-Deteksi-Ancaman-Windows-1
+Jelajahi metode Akses Awal yang umum pada Windows dan pelajari cara mendeteksinya
+
 
 Perkenalan
 sekarang saatnya untuk menerapkan pengetahuan tersebut! Ruang ini memandu Anda melalui teknik Akses Awal dan Penemuan yang umum dan mengajarkan cara mendeteksi masing-masing teknik tersebut hanya menggunakan log peristiwa Windows, sumber log yang paling umum digunakan oleh tim SOC di dunia nyata .
