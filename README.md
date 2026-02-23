@@ -1,4 +1,4 @@
-# USE-CASE-Deteksi-Ancaman-Windows-1
+# Study-CASE-Deteksi-Ancaman-Windows-1
 Jelajahi metode Akses Awal yang umum pada Windows dan pelajari cara mendeteksinya
 
 
